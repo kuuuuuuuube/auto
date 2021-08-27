@@ -1,0 +1,5 @@
+- name: Some error play
+  hosts: web
+  tasks:
+  - name: Error
+    command: /bin/false

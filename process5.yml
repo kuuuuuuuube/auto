@@ -1,0 +1,10 @@
+---
+- name: Some successful play
+  hosts: web
+  tasks:
+  - name: Some successful task
+    ping:
+    register: result
+  - name: debug
+    debug: 
+      msg: "{{ result }}"
